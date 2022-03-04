@@ -1,0 +1,5 @@
+Solpeek a Solana powering Web3 application.
+
+___________________.env___________________________
+REACT_APP_PUBKEY=_______solana_token_pubkey_______
+REACT_APP_PROGRAMID=_____Solana_program_id________

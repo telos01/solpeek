@@ -9,11 +9,9 @@ import {
 import axios from "../config";
 import { deserialize, serialize, } from 'borsh';
 
-const programAccount = new PublicKey(
-  "DcGPfiGbubEKh1EnQ86EdMvitjhrUo8fGSgvqtFG4A9t"
-);
+const programAccount = new PublicKey(process.env.REACT_APP_PUBKEY);
 
-const adminAddress = new PublicKey("DGqXoguiJnAy8ExJe9NuZpWrnQMCV14SdEdiMEdCfpmB");
+const adminAddress = new PublicKey(process.env.REACT_APP_PROGRAMID);
 
 const cluster = "https://api.devnet.solana.com";
 const connection = new Connection(cluster, "confirmed");
